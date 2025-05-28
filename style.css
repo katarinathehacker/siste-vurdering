@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Her kommer styling for nav-baren*/
+
+nav{
+    border: 2px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+    color: black;
+    height: 70px;
+    padding-left: 25px;
+    padding-right: 25px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-liste {
+    position: relative;
+}
+
+ #navbar> .nav-liste {
+    display: flex;
+    flex-direction: row;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+    background-color: lightgoldenrodyellow;
+    width: 200px;
+    border-radius: 5px;
+    padding: 10px;
+    transition: opacity 0.3s;
+    z-index: 1000;
+}
+.nav-liste.active .dropdown-content {
+    display: block;
+}
+
+
+/*Her avsluttes styling for nav-baren*/
+
+/*her kommer styling for header/overskrift*/
+
+header {
+    margin-top: 80px;
+}
+
+header .overskrift {
+    padding-top: 50px;
+    text-align: center;
+}
+/*avsluttning av styling for overskrift*/
+
+
+/*her kommer styling for main*/
+main .fire-bokser {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    padding: 20px;
+    
+    
+    
+}
+
+.fire-bokser .boksene {
+    display: grid;
+    align-items: center;
+    position: relative;
+    border-radius: 8px;
+    padding: 50px;
+    margin: 30px;
+    background-color: hsl(250, 3%, 97%);
+    height: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    
+}
+
+/* NÅr man hover boksen, skal divtekst forsvinne*/
+.boksene:hover .divtekst {
+    opacity: 0;
+    transition: opacity .3s ease-out;
+    -moz-transition: opacity .3s ease-out;
+    -webkit-transition: opacity .3s ease-out;
+    -o-transition: opacity .3s ease-out;
+}
+
+.boksene:hover {
+    transform: translateY(-5px);
+    box-shadow:0 6px 12px rgba(0, 0, 0, 0.4) ;
+    background-color: #FF87AB;
+}
+
+/* Beskrivelsesdiv plassert i midten */
+main .boksene-beskrivelse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.7s ease-out;
+}
+
+
+.boksene:hover .boksene-beskrivelse {
+    opacity: 1;
+
+    transition: opacity .7s ease-out;
+    -moz-transition: opacity .7s ease-out;
+    -webkit-transition: opacity .7s ease-out;
+    -o-transition: opacity .7s ease-out;
+}
+
+.boksene-beskrivelse .hover-tekst {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    height: 24px;
+}
+
+.boksene-beskrivelse .tekst {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.boksene-beskrivelse .gammel {
+    transform: translateY(0);
+}
+
+.boksene-beskrivelse .ny {
+    transform: translateY(100%);
+}
+
+.boksene:hover .gammel {
+    transform: translateY(-100%);
+}
+
+.boksene:hover .ny {
+    transform: translateY(0);
+}
+
+
+/* Her starter styling om container*/
+footer .container {
+    background-color: azure;
+    height: 50vh;
+    
+}
+
+footer .avslutning {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: auto auto auto;
+margin-left: 20px;
+padding: 20px;
+}
+/*Her avsluttes styling om container*/
+
