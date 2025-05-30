@@ -4,16 +4,29 @@
     padding: 0;
 }
 
+html,
+#bakgrunnsbilde {
+    height: 100%;
+}
+
+#bakgrunnsbilde {
+    background-image: url("https://i.pinimg.com/originals/d2/e4/33/d2e433a119194661db9909a4162bcd36.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
 /*Her kommer styling for nav-baren*/
 
-nav{
-    border: 2px solid black;
+nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: lightgoldenrodyellow;
-    color: black;
+    background-color: #e5e5e5;
     height: 70px;
     padding-left: 25px;
     padding-right: 25px;
@@ -22,11 +35,33 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+
 .nav-liste {
     position: relative;
 }
 
- #navbar> .nav-liste {
+.nav-liste h3 {
+    color: #22577a;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.nav-liste a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-liste a:hover {
+    transform: scale(1.1);
+    transition: transform 0.3 ease;
+    text-shadow: 0.1px 0.5px 1px;
+}
+
+#navbar>.nav-liste {
     display: flex;
     flex-direction: row;
 }
@@ -44,6 +79,7 @@ nav{
     transition: opacity 0.3s;
     z-index: 1000;
 }
+
 .nav-liste.active .dropdown-content {
     display: block;
 }
@@ -61,6 +97,16 @@ header .overskrift {
     padding-top: 50px;
     text-align: center;
 }
+
+header h1 {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: #bee9e8;
+    text-shadow: 2px 2px 2px blue;
+}
+
 /*avsluttning av styling for overskrift*/
 
 
@@ -72,9 +118,9 @@ main .fire-bokser {
     grid-template-rows: auto auto;
     gap: 10px;
     padding: 20px;
-    
-    
-    
+
+
+
 }
 
 .fire-bokser .boksene {
@@ -88,7 +134,7 @@ main .fire-bokser {
     height: 200px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
-    
+
 }
 
 /* NÅr man hover boksen, skal divtekst forsvinne*/
@@ -100,9 +146,17 @@ main .fire-bokser {
     -o-transition: opacity .3s ease-out;
 }
 
+.divtekst {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: #f28482;
+}
+
 .boksene:hover {
     transform: translateY(-5px);
-    box-shadow:0 6px 12px rgba(0, 0, 0, 0.4) ;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
     background-color: #FF87AB;
 }
 
@@ -164,20 +218,82 @@ main .boksene-beskrivelse {
     transform: translateY(0);
 }
 
+.tekst {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: hsl(250, 3%, 97%);
+    font-size: 20px;
+}
 
+/* her starter styling for huskeliste */
+main .huskeliste {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-left: 0;
+    
+    background-color: hsl(250, 3%, 97%);
+    margin-top: 150px;
+    height: 200px;
+    box-shadow: 10px 5px 5px white;
+    padding-top: 50px;
+    padding-left: 50px;
+    text-align: center;
+
+}
+
+.huskeliste-tekst h3 {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #bee9e8;
+    text-shadow: 2px 2px 2px blue;
+}
+
+.huskeliste-ikon i {
+    font-size: 30px;
+    color: #8b8c89;
+}
+
+/* huskeliste styling avsluttes her */
+
+
+/*Countdown styling*/
+
+main .countdown {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main .countdown-innhold {
+   padding: 100px;
+    box-shadow:10px 10px 10px #000;
+    -webkit-box-shadow:10px 10px 10px #000;
+    -moz-box-shadow: 10px 10px 10px #000;
+    
+}
+
+.countdown-innhold .timer {
+    
+}
 /* Her starter styling om container*/
 footer .container {
     background-color: azure;
     height: 50vh;
-    
+
 }
 
 footer .avslutning {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: auto auto auto;
-margin-left: 20px;
-padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    margin-left: 20px;
+    padding: 20px;
 }
-/*Her avsluttes styling om container*/
 
+/*Her avsluttes styling om container*/
