@@ -1,4 +1,25 @@
+// kopier link
+document.addEventListener('DOMContentLoaded', () => {
+    const shareIcon = document.querySelector('.huskeliste-ikon');
+    const melding = document.getElementById('kopiert-melding');
 
+    shareIcon.addEventListener('click', () => {
+        
+        navigator.clipboard.writeText(window.location.href)
+            .then(() => {
+                
+                melding.style.display = 'block';
+
+                
+                setTimeout(() => {
+                    melding.style.display = 'none';
+                }, 2000);
+            })
+            .catch(err => {
+                console.error('Kopiering mislyktes: ', err);
+            });
+    });
+});
 
 // nedtelling til ferie 
 const dagerEl = document.getElementById("dager");
