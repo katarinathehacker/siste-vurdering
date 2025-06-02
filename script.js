@@ -53,4 +53,15 @@ setInterval(nedtelling, 1000);
 nedtelling();
 
 
-// avslutt nedtelling til ferie
+// styling på beskrivelser.html. Legg til destinasjon
+
+function leggTilDestinasjon() {
+    const input = document.getElementById("destinasjonsinput")
+    const sted = input.value.trim();
+
+    if (navn === "") return; 
+
+    const liste = document.getElementById("destinasjonsListe");
+
+    const div = document.createElement("div");
+}

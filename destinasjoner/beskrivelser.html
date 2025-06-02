@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beskrivelser fra reisene</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+
+    <nav id="navbar">
+        <div class="nav-liste">
+            <a href="destinasjoner/tidligere-destinasjoner.html">
+                <h3>TIDLIGERE DESTINASJONER</h3>
+            </a>
+
+        </div>
+
+        <div class="nav-liste">
+            <a href="destinasjoner/beskrivelser.html">
+                <h3>BESKRIVELSER FRA REISENE</h3>
+            </a>
+             </div>
+
+                <div class="nav-liste">
+                    <a href="destinasjoner/nye-destinasjoner.html">
+                        <h3>NYE DESTINASJONER</h3>
+                    </a>
+                </div>
+
+                <div class="nav-liste">
+                    <a href="destinasjoner/destinasjonsquiz.html">
+                        <h3>DESTINASJONSQUIZEN</h3>
+                    </a>
+                </div>
+    </nav>
+    </header>
+    <main>
+        <div class="ferie-destinasjoner-container">
+            <h1>Mine Feriedestinasjoner</h1>
+
+            <div class="ferie-destinasjoner-input">
+                <input type="text" id="destinasjonsinput" placeholder="F.eks. Columbia, Maldivene, Spania, Italia">
+                <button onclick="leggTilDestinasjon()">Legg til</button>
+            </div>
+
+            <div id="destinasjonsListe"></div>
+
+        </div>
+    </main>
+    <footer></footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
