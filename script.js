@@ -53,15 +53,3 @@ setInterval(nedtelling, 1000);
 nedtelling();
 
 
-// styling på beskrivelser.html. Legg til destinasjon
-
-function leggTilDestinasjon() {
-    const input = document.getElementById("destinasjonsinput")
-    const sted = input.value.trim();
-
-    if (navn === "") return; 
-
-    const liste = document.getElementById("destinasjonsListe");
-
-    const div = document.createElement("div");
-}
