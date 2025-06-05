@@ -49,6 +49,17 @@ function nedtelling() {
 
 }
 
+
+async function hentData() {
+    const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTdLTjmOjxPkEYIQqJwvT7AE8MAVW2LKtBl2m0xH3g-JU01T44q2cmEw_pVzZz50AZBUrTOvdAu3aEK/pub?gid=0&single=true&output=tsv";
+    const response = await fetch(url);
+    const tsv = await response.text();
+    data = tsv
+        .split("\n")
+        .map(rad => rad.split("\t"));
+    return data;
+}
+
 setInterval(nedtelling, 1000);
 nedtelling();
 

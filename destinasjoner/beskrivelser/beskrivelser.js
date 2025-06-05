@@ -1,3 +1,4 @@
+
 // styling på beskrivelser.html. Legg til destinasjon
 
 // for å hente lagrede destinasjoner fra localStorage
@@ -77,3 +78,28 @@ function leggTilDestinasjon() {
     visDestinasjoner();
 }
 visDestinasjoner();
+
+function visFeriemapper(data) {
+    const divEl = document.getElementById("feriemappeFraRegneark");
+    divEl.innerHTML = "";
+
+    const overskrifter = data[0];
+    const rader = data.slice(1); 
+
+    rader.forEach(rad => {
+        const mappeDiv = document.createElement("div");
+        mappeDiv.className = "mappe";
+
+        rad.forEach((celle, i) => {
+            const linje = document.createElement("p");
+            linje.innerHTML = `<strong>${overskrifter[i]}</strong> ${celle}`;
+            mappeDiv.appendChild(linje);
+        });
+
+        divEl.appendChild(mappeDiv);
+    });
+}
+
+hentData().then(data => {
+    visFeriemapper(data);
+});
