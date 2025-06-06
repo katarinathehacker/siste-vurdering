@@ -77,7 +77,7 @@ header {
 }
 
 header .overskrift {
-    padding-top: 50px;
+    padding-top: 100px;
     text-align: center;
 }
 
@@ -85,7 +85,7 @@ header h1 {
     font-family: "Alfa Slab One", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 50px;
+    font-size: 60px;
     color: #bee9e8;
     text-shadow: 2px 2px 2px blue;
 }
@@ -371,8 +371,8 @@ footer .avslutning {
     font-family: "Lobster", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 30px;
     color: #f28482;
+    font-size: 30px;
     margin-bottom: 15px;
 
 }

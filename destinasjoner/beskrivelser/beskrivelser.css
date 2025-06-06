@@ -1,10 +1,45 @@
-div .mappe {
-    display: flex;
 
-    gap: 50px;
+.ferie-destinasjoner-container h1{
+    text-align: center;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: #bee9e8;
+    text-shadow: 2px 2px 2px blue;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+ #feriemappeFraRegneark{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    margin: 4rem;
     
 }
 
-.mappe p{
-    
+.mappe {
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+}
+.mappe p {
+    margin-bottom: 1.5rem;
+}
+.mappe .underoverskrift {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #f28482;
+    text-decoration: underline;
+}
+
+.mappe .bokstekst {
+ 
+}
+
+.destinasjonsoverskrift1{
+    font-size: 25px;
 }
