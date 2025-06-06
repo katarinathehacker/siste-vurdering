@@ -40,6 +40,11 @@ nav {
     position: relative;
 }
 
+.nav-liste i{
+    font-size: 30px;
+    color: #22577a;
+}
+
 .nav-liste h3 {
     color: #22577a;
     font-family: "Merriweather", serif;
@@ -85,7 +90,7 @@ header h1 {
     font-family: "Alfa Slab One", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 60px;
+    font-size: 70px;
     color: #bee9e8;
     text-shadow: 2px 2px 2px blue;
 }
@@ -122,6 +127,7 @@ main .fire-bokser {
     transition: transform 0.2s, box-shadow 0.2s;
     width: 60%;
     text-align: center;
+    cursor: pointer;
 }
 
 /* NÅr man hover boksen, skal divtekst forsvinne*/
@@ -145,6 +151,7 @@ main .fire-bokser {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
     background-color: #FF87AB;
+    
 }
 
 /* Beskrivelsesdiv plassert i midten */
@@ -209,7 +216,13 @@ main .boksene-beskrivelse {
     font-family: "Anton", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: hsl(250, 3%, 97%);
+    color: #22577a;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
     font-size: 20px;
 }
 
@@ -223,6 +236,7 @@ main .huskeliste {
     background-color: hsl(250, 3%, 97%);
     margin-top: 150px;
     height: 200px;
+    box-shadow: 10px 5px 5px white;
     padding-top: 50px;
     padding-left: 50px;
     text-align: center;
@@ -395,6 +409,7 @@ footer .avslutning {
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+    text-decoration: none;
 }
 
 /*Her avsluttes styling om container*/

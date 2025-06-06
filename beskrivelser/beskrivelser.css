@@ -39,12 +39,13 @@ background-color: #ffe5ec;
 }
 
 .mappe .bokstekst {
-    color: hsl(250, 3%, 97%);
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    font-family: "Anton", sans-serif;
-    font-weight: 400;
+    color: #22577a;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
     font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 .destinasjonsoverskrift1{

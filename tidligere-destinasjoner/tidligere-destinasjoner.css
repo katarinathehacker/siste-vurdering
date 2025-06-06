@@ -16,14 +16,15 @@ body {
 
 #feriemappeFraRegneark{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 5rem;
     margin: 4rem;
     
 }
 
 .mappe {
-    border: 2px solid blue;
+    border: 2px solid #22577a;
+    
     border-radius: 10px;
     padding: 1rem;
     text-align: center;
@@ -40,18 +41,34 @@ body {
 }
 
 .mappe .bokstekst {
-    color: hsl(250, 3%, 97%);
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    font-family: "Anton", sans-serif;
-    font-weight: 400;
+    color: #22577a;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
     font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    text-align: center;
+    
 }
 
 .destinasjonsoverskrift1{
     font-size: 25px;
 }
 
+@media (max-width:1580px) {
+    #feriemappeFraRegneark {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:1220px) {
+    #feriemappeFraRegneark {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 @media (max-width:920px) {
     #feriemappeFraRegneark {
         display: flex;
