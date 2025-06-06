@@ -1,7 +1,8 @@
-body{
+body {
     background-color: #ffe5ec;
 }
-main h1 {
+
+.overskrift h1{
     text-align: center;
     font-family: "Alfa Slab One", serif;
     font-weight: 400;
@@ -10,4 +11,5 @@ main h1 {
     color: #bee9e8;
     text-shadow: 2px 2px 2px blue;
     padding-top: 50px;
+    padding-bottom: 50px;
 }

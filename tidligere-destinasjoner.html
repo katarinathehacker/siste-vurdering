@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tidligere destinasjoner</title>
-    <link rel="stylesheet" href="../../style.css">
-    <link rel="stylesheet" href="tidligere-destinasjoner.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./tidligere-destinasjoner/tidligere-destinasjoner.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -46,14 +46,14 @@
             </div>
     
             <div class="nav-liste">
-                <a href="destinasjoner/beskrivelser.html">
+                <a href="./beskrivelser.html">
                     <h3>BESKRIVELSER FRA REISENE</h3>
                 </a>
                  </div>
     
     
                     <div class="nav-liste">
-                        <a href="destinasjoner/destinasjonsquiz.html">
+                        <a href="./destinasjonsquiz.html">
                             <h3>DESTINASJONSQUIZEN</h3>
                         </a>
                     </div>
@@ -61,13 +61,62 @@
     </header>
     <main>
 
-        <div>
+        <div class="overskrift">
             <h1>Bilder fra forskjellige reiser</h1>
+        </div>
+
+        <div class="ferie-destinasjoner-container">
+            <h1 id="toppen">Mine Feriedestinasjoner</h1>
+            <div id="feriemappeFraRegneark">
+                
+            </div>
+
+            <div class="ferie-destinasjoner-input">
+                <input type="text" id="destinasjonsinput" placeholder="Legg til en feriedestinasjon..">
+                <button onclick="leggTilDestinasjon()">Legg til</button>
+                <div id="destinasjonsListe"></div>
+            </div>
+
+
         </div>
       
     </main>
-    <footer></footer>
-    
-    <script src="tidligere-destinasjoner.js"></script>
+    <footer>
+
+
+        <div class="container">
+
+            <div class="avslutning">
+
+                <div class="avslutning-boks">
+                    <p id="overskrift1">Følg reisen min: </p>
+                    <div class="soMe">
+                    <a href="https://instagram.com/katarinaamai" target ="_blank">Instagram</a>
+                    <a href="https://maps.google.com" target="_blank">Google Maps</a>
+                </div>
+                </div>
+                
+                <div class="avslutning-boks">
+                    <h3 id="overskrift1">Min reisedagbok</h3>
+                    <p>Laget med ❤️ av Katarina Mai </p>
+                </div>
+                
+                
+                <div class="avslutning-boks">
+                    <h3 id="overskrift1">Mine drømmedestinasjoner:</h3>
+                    <p>Hawaii</p>
+                    <p>Cuba</p>
+                    <p>Usa</p>
+                    <p>Australia</p>
+                    <p>Maldivene</p>
+                </div>
+                
+            </div>
+            <a id="overskrift" href="#toppen">Tilbake til toppen</a>
+        </div>
+
+    </footer>
+    <script src="./script.js"></script>
+    <script src="./tidligere-destinasjoner/tidligere-destinasjoner.js"></script>
 </body>
 </html>

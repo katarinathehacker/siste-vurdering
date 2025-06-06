@@ -1,4 +1,6 @@
-
+body{
+background-color: #ffe5ec;
+}
 .ferie-destinasjoner-container h1{
     text-align: center;
     font-family: "Alfa Slab One", serif;
@@ -37,7 +39,12 @@
 }
 
 .mappe .bokstekst {
- 
+    color: hsl(250, 3%, 97%);
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .destinasjonsoverskrift1{

@@ -73,7 +73,7 @@ nav {
 /*her kommer styling for header/overskrift*/
 
 header {
-    margin-top: 80px;
+    margin-top: 70px;
 }
 
 header .overskrift {
@@ -223,7 +223,6 @@ main .huskeliste {
     background-color: hsl(250, 3%, 97%);
     margin-top: 150px;
     height: 200px;
-    box-shadow: 10px 5px 5px white;
     padding-top: 50px;
     padding-left: 50px;
     text-align: center;
