@@ -64,6 +64,7 @@ nav {
 #navbar>.nav-liste {
     display: flex;
     flex-direction: row;
+    padding: 40px;
 }
 
 
@@ -96,10 +97,13 @@ header h1 {
 main .fire-bokser {
     display: grid;
     justify-content: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr ;
     grid-template-rows: auto auto;
     gap: 10px;
     padding: 20px;
+    margin-top: 150px;
+    margin-left: 25%;
+
 
 
 
@@ -116,7 +120,8 @@ main .fire-bokser {
     height: 200px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
-
+    width: 60%;
+    text-align: center;
 }
 
 /* NÅr man hover boksen, skal divtekst forsvinne*/
@@ -244,12 +249,11 @@ main .huskeliste {
     font-family: "Anton", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-family: "Anton", sans-serif;
+    color: #bee9e8;
+    text-shadow: 2px 2px 2px blue;
     margin-top: 10px;
     font-size: 20px;
     animation: fadeInOut 2s ease-in-out;
-    color: #bee9e8;
-    text-shadow: 2px 2px 2px blue;
 }
 
 @keyframes fadeInOut {
@@ -345,6 +349,53 @@ footer .avslutning {
     grid-template-rows: auto auto auto;
     margin-left: 20px;
     padding: 20px;
+}
+
+.avslutning .soMe {
+    display: flex;
+    flex-direction: column;
+}
+.avslutning a {
+    color: #22577a;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    margin-top: 15px;
+    
+}
+
+.avslutning-boks #overskrift1 {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: #f28482;
+    margin-bottom: 15px;
+
+}
+.avslutning-boks p {
+    color: #22577a;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+ #overskrift {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #bee9e8;
+    text-shadow: 2px 2px 2px blue;
+    font-size: 40px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
 }
 
 /*Her avsluttes styling om container*/

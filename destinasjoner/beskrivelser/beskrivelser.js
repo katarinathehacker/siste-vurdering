@@ -92,8 +92,9 @@ function visFeriemapper(data) {
 
         rad.forEach((celle, i) => {
             const linje = document.createElement("p");
-            linje.innerHTML = `<strong>${overskrifter[i]}</strong> ${celle}`;
-            mappeDiv.appendChild(linje);
+            
+            linje.innerHTML = `<strong class="underoverskrift">${overskrifter[i]}</strong> <span class="bokstekst">${celle}</span>`;
+            mappeDiv.appendChild(linje); 
         });
 
         divEl.appendChild(mappeDiv);
