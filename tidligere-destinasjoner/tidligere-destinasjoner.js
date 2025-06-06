@@ -15,7 +15,8 @@ function visFeriemapper(data) {
 
         const bilde = document.createElement("img");
         
-        bilde.src = `https://drive.usercontent.google.com/download?id=${rad[5]}&export=view&authuser=0`;
+        //bilde.src = `https://drive.usercontent.google.com/download?id=${rad[5]}&export=view&authuser=0`;
+        bilde.src = `https://lh3.googleusercontent.com/pw/${rad[5]}=w300`;
         bilde.alt = `bildebeskrivelse${rad[0]}`;
 
         mappeDiv.appendChild(linje); 
